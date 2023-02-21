@@ -16,7 +16,6 @@ class pokerdice
 
     public function shapename()
     {
-        
         switch ($this->num_aleatorio) {
             case 6:
                 return $this->cara = "AS";
