@@ -19,6 +19,6 @@
     <title>Ejercicio 3</title>
 </head>
 <body>
-    <h1><strong><?php echo NOMBRE;?></strong></h1>
+    <h1><?php echo NOMBRE;?></h1>
 </body>
 </html>
