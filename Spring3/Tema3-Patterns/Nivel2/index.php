@@ -2,11 +2,11 @@
 
 require_once "poultry.php";
 
-function duck_interaction($duck) {
+function duck_interaction($duck)
+{
     $duck->quack();
     $duck->fly();
 }
-
 
 $duck = new Duck;
 $turkey = new Turkey;
@@ -18,6 +18,3 @@ echo "The Duck says...\n";
 duck_interaction($duck);
 echo "The TurkeyAdapter says...\n";
 duck_interaction($turkey_adapter);
-
-
-

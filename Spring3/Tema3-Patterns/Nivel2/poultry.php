@@ -23,11 +23,10 @@ class Turkey
     {
         echo "I'm flying a short distance \n";
     }
-
-    
 }
 
-interface TurkeyAdap{
+interface TurkeyAdap
+{
     public function quack();
     public function fly();
 }
@@ -49,12 +48,10 @@ class TurkeyAdapter implements TurkeyAdap
     public function fly()
     {
         $distance = 5;
-        while($distance >0)
+        while ($distance > 0) 
         {
             $this->NewTurkey->fly();
             $distance--;
         }
     }
 }
-
-
