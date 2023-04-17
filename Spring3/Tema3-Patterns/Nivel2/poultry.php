@@ -27,6 +27,11 @@ class Turkey
     
 }
 
+interface TurkeyAdap{
+    public function quack();
+    public function fly();
+}
+
 class TurkeyAdapter implements TurkeyAdap
 {
     protected $NewTurkey;
@@ -52,7 +57,4 @@ class TurkeyAdapter implements TurkeyAdap
     }
 }
 
-interface TurkeyAdap{
-    public function quack();
-    public function fly();
-}
+
