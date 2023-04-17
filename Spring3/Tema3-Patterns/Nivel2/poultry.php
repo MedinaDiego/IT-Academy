@@ -1,5 +1,4 @@
 <?php
-
 class Duck
 {
     public function quack()
@@ -24,23 +23,36 @@ class Turkey
     {
         echo "I'm flying a short distance \n";
     }
+
+    
 }
 
-class TurkeyAdapter
+class TurkeyAdapter implements TurkeyAdap
 {
-    protected $turkey;
-    public function __construct(TurkeyAdap $turkey)
+    protected $NewTurkey;
+    public function __construct(Turkey $NewTurkey)
     {
-        $this->turkey = $turkey;
+        $this->NewTurkey = $NewTurkey;
     }
 
-    public function process(){
-        $this->turkey->getDuck();
-        $this->turkey->flyDuck();
+
+    public function quack()
+    {
+        $this->NewTurkey->gobble();
+    }
+
+    public function fly()
+    {
+        $distance = 5;
+        while($distance >0)
+        {
+            $this->NewTurkey->fly();
+            $distance--;
+        }
     }
 }
 
 interface TurkeyAdap{
-    public function getDuck();
-    public function flyDuck();
+    public function quack();
+    public function fly();
 }
