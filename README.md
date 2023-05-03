@@ -7,7 +7,9 @@ Tareas pendientes
 
    - Tema 2:  
       + Nivel 1 : Html + css (ok)
-      + Nivel 2 : >> no entregado
+      + Nivel 2 : > no entregado.
+      + Nivel 3 : > no entregado.
+      
    - Tema 3:  - Entrega d'exercici: PHP bàsics (Tema 3)  -> OK
               - Entrega d'excercici: Funcions i Estructures de control 
 
